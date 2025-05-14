@@ -1,4 +1,5 @@
 NEAT Visualizer
+
 Background and Project Details
 This project provides dynamic visualizations for analyzing the behavior and evolution of neural networks using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. The core aim is to track how the population of networks evolves over time, how species diverge, and how network topologies change, all while offering optional biological realism through spiking neuron modeling.
 
@@ -6,33 +7,33 @@ Visualizations are implemented using Matplotlib and Graphviz. The plots can be s
 
 Functional Overview
 1. Fitness Evolution Plot
-Plots the average, best, and standard deviation of fitness values across generations.
+   Plots the average, best, and standard deviation of fitness values across generations.
 
-X-axis: Generation number
+   X-axis: Generation number
 
-Y-axis: Fitness score
+   Y-axis: Fitness score
 
-Helps detect stagnation, convergence, or improvement patterns
+   Helps detect stagnation, convergence, or improvement patterns
 
-Standard deviation bands (+1σ, −1σ) show population variance
+   Standard deviation bands (+1σ, −1σ) show population variance
 
 2. Species Distribution Plot
-Tracks how NEAT's speciation mechanism maintains diversity.
-
-Stacked area chart showing the number of genomes in each species over time
-
-Each colored layer represents a species
-
-Useful for debugging if a single species dominates too early or if diversity collapses
+  Tracks how NEAT's speciation mechanism maintains diversity.
+  
+  Stacked area chart showing the number of genomes in each species over time
+  
+  Each colored layer represents a species
+  
+  Useful for debugging if a single species dominates too early or if diversity collapses
 
 3. Neural Network Topology Visualization
-Draws the genome’s neural architecture with optional pruning of unused nodes.
+   Draws the genome’s neural architecture with optional pruning of unused nodes.
 
-Node colors: Gray (input), Blue (output), Customizable hidden nodes
+   Node colors: Gray (input), Blue (output), Customizable hidden nodes
 
-Arrow thickness reflects connection weight
+   Arrow thickness reflects connection weight
 
-Red arrows: Positive weights; Blue arrows: Negative weights
+   Red arrows: Positive weights; Blue arrows: Negative weights
 
 Dotted arrows indicate disabled connections
 
